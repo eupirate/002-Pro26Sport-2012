@@ -1,0 +1,3 @@
+logo=
+&logo-faq=xsbling.com 
+&url=index.html

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+<title>Image Close Up</title>
+
+<link rel="stylesheet" href="coolstyle.css" type="text/css">
+
+<meta http-equiv="imagetoolbar" content="no">
+
+<script language="JavaScript" type="text/javascript">
+<!-- // START SCRIPT
+function noRightClick()
+	{if (event.button==2)
+		{alert('You may not right mouse click this page')}}
+	document.onmousedown=noRightClick
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onload="javascript:window.focus()">
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tr><td align="center">
+
+
+
+
+
+<a href="slideshow.htm">
+
+<!-- IMAGE CODE -->
+
+<script language="JavaScript" type="text/javascript">
+<!-- // START SCRIPT
+if (location.search.length > 0) {
+document.write('<img src="');
+document.write(location.search.substring(1));
+document.write('" name="show" border="0" class="viewer-border" alt="View Slideshow"><br>');
+}
+//-->
+</script>
+
+</a>
+
+
+
+
+<br>
+
+
+
+
+<div id="ZOOM">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td>
+
+
+
+<!-- ZOOM BUTTONS -->
+
+<!-- START ZOOM CODE -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var zoom 		= "yes"		// SHOW ZOOM yes/no
+
+   if (zoom == "yes") {
+browser_version= parseInt(navigator.appVersion);
+browser_type = navigator.appName;
+if (browser_type == "Microsoft Internet Explorer" && (browser_version >= 4)) {
+document.write("<nobr><a href=\"#\" onMouseOver=\"show.style.zoom='1.1'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-1.gif\" border=\"0\"></a>");
+document.write("<a href=\"#\" onMouseOver=\"show.style.zoom='1.3'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-2.gif\" border=\"0\"></a>");
+document.write("<a href=\"#\" onMouseOver=\"show.style.zoom='1.5'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-3.gif\" border=\"0\"></a>");
+document.write("<img src=\"picts/spacer.gif\" height=\"24\" width=\"40\"><br></nobr>");
+} }
+
+// -->
+</script>
+
+
+
+</td><td><form class="formmargin"><input type="button" value="Close" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'" class="button-popups" onclick='self.close()'>&nbsp;</form>
+
+</td><td><form class="formmargin"><input type="button" value="Print Image" onclick='window.print()' class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;</form>
+
+</td><td><form action="slideshow.htm" class="formmargin"><input type="submit" value="Tour Products" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'" class="button-popups">&nbsp;</form>
+
+</td></tr></table>
+</div>
+
+
+
+
+
+</td></tr></table>
+</body></html>

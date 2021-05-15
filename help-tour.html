@@ -1,0 +1,304 @@
+<html><head>
+
+
+
+<title>Tour Add-On Help Page</title>
+
+<link rel=StyleSheet href="http://allwebco-templates.com/styleT.css" type="text/css" media="screen">
+
+<style type="text/css">
+BODY { scrollbar-base-color: #F0F0F0 }
+a:link		{ color: #6633FF; text-decoration: none }
+
+a:visited	{ color: #6633FF; text-decoration: none }
+
+a:active	{ color: #669900; text-decoration: none }
+
+a:hover		{ color: #FF6600; text-decoration: none }
+
+ /* THE NEXT LINE CONTROLS THE FONT SIZE FOR ALL PAGES */
+
+TABLE 		{ COLOR: #333333; FONT: 11px verdana, arial, sans-serif; font-weight: normal }
+
+.hilite		{ COLOR: #FF6600; font-weight: bold }
+
+.hilite2	{ COLOR: #006600 }
+
+.title 		{ color: #000000; font: 15px arial, verdana, sans-serif; font-weight: bold }
+
+</style> 
+
+
+
+
+
+
+</head>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" leftmargin=0 rightmargin=0 topmargin=0 bottommargin=0 marginheight=0 marginwidth=0>
+
+
+<script language="JavaScript" src="http://world-templates.com/addons/header_addons.js"></script>
+
+<script language="JavaScript" src="http://allwebcodesign.com/setup/templatehelptop.js"></script>
+
+<!-- MAIN TABLE-->
+<center>
+<TABLE cellpadding="0" cellspacing="15" border=0 width="750"><tr><td ALIGN=LEFT VALIGN=TOP colspan="2">
+
+
+
+
+</td></tr><tr><td ALIGN=LEFT VALIGN="top" width="200">
+
+
+
+
+<br>
+
+
+
+[ <a href="tour-sample_page.htm">Sample Tour Page</a> ]<BR>
+
+[ <a href="FORMtour-sample_page.htm">Sample Page With Cart</a> ]<BR>
+
+
+<br><br>
+
+
+<script language="JavaScript" src="http://allwebcodesign.com/setup/templatehelp.js"></script>
+
+<BR>
+
+<a href="http://allwebcodesign.com"><img src="http://allwebcodesign.com/picts/logo-cwd.gif" border="0"></a>
+
+<br><br>
+
+
+
+
+</td><td valign="top">
+
+
+
+<span class="title">Virtual Tour Add-On Setup:<BR></span>
+This script is intended to be added to Allwebco templates (or websites) that do not now have a virtual tour included. <a href="http://allwebco-templates.com/support/S_tour_templates_addon.htm">Click here for current info and options for this add-on.</a>
+
+<br><br>
+<span class="title">Outline:</span> (Steps on this page)<br>
+#1. Unzip and place files.<br>
+#2. Create new tour page or add links.<br>
+#3. Add 2 lines to page head areas.<br>
+#4. Edit the header Flash text.<br>
+#5. Setup the tour.<br>
+#6. Troubleshooting.<br>
+#7. Change/Edit options.<br>
+
+<br>
+
+<span class="title">STEP #1:</span> | <a href="http://allwebco-templates.com/support/S_tour_templates_addon.htm">More Details</a><BR>
+Unzip the tour zip file and put the "tour" folder in your template folder. Place the "tour-sample_page.htm" and "FORMtour-sample_page.htm" in your template folder with the other HTML files. This should be the same folder with your index.html and about.html.
+
+<br><br>
+
+<span class="title">STEP #2-A:</span> <span class="hilite">(Create a new tour page)</span><BR>
+You can now either add tour links to your existing pages or you can create a new tour page. To create a new tour page:
+
+<ol>
+
+<li>To create a new page to use as the tour page. Copy an existing page. For example make a copy of your about page. <a href="http://www.allwebco-templates.com/support/S_add_remove_pages.htm">Click here for help copying pages.</a> We will call this page "tour_home.htm" for the rest of these instructions.
+
+<li>Open the <a href="tour-sample_page.htm" target="_blank">"tour-sample_page.htm"</a> in Notepad or your editor, or if you want a Paypal cart tour open the <a href="FORMtour-sample_page.htm" target="_blank">"FORMtour-sample_page.htm"</a> in Notepad.
+
+<li>In the tour sample page highlight the code between these notes in the HTML source code: "START COPY AND PASTE AREA" and "END COPY AND PASTE AREA".
+<li>In your "tour_home.htm" you created find the "MAIN TABLE" or the "CONTENT TABLE" note. Or find the start of the page text in your "tour_home.htm". Paste the code from the "tour-sample_page.htm" or "FORMtour-sample_page.htm" into this area on your "tour_home.htm".
+<li>Save this page and test it in your browser to see how it looks. The tour links will still not work and the text may not be formatted yet. You will just be checking for serious alignment errors or placement errors.
+<li>Go to step #3 on this page.
+</ol>
+
+
+<span class="title">STEP #2-B:</span> <span class="hilite">(Adding tour links on existing pages)</span> | <a href="http://www.allwebco-templates.com/support/S_add-links.htm">More Link Details</a><BR>
+You can add a tour link to any existing page or to your menu.js. To add tour links on your existing HTML pages:
+
+
+
+Select and copy the following code. Then paste this onto any of your HTML pages:
+
+<br><br>
+
+
+<TEXTAREA NAME="comments" ROWS="2" COLS="55" wrap="soft" style="width:500px;FONT: 10px arial, verdana, sans-serif">
+<a href="javascript:popUpTour('tour/tour-2.htm')" class="tourlink">Your Link Name</a><br>
+</TEXTAREA>
+
+
+
+<br><br>
+
+In HTML editors such as Frontpage or Dreamweaver create a new link and use this code for the actual link:
+
+<br><br>
+
+<TEXTAREA NAME="comments" ROWS="2" COLS="55" wrap="soft" style="width:500px;FONT: 10px arial, verdana, sans-serif">
+javascript:popUpTour('tour/tour-2.htm')
+</TEXTAREA>
+
+
+<br><br>
+
+To add a link in the menu.js or sidebar.js you will add two backslashes to the link like the following:
+
+<br><br>
+
+<TEXTAREA NAME="comments" ROWS="2" COLS="55" wrap="soft" style="width:500px;FONT: 10px arial, verdana, sans-serif">
+javascript:popUpTour(\'tour/tour-2.htm\')
+</TEXTAREA>
+<br><br>
+<span class="hilite2">Or in some menus try this:</span>
+<br><br>
+<TEXTAREA NAME="comments" ROWS="2" COLS="55" wrap="soft" style="width:500px;FONT: 10px arial, verdana, sans-serif">
+javascript:popUpTour(\"tour/tour-2.htm\")
+</TEXTAREA>
+
+
+<br><br>
+
+<span class="hilite">NOTE:</span> If you are adding links to the sidebar.js or need help adding links to your pages, see the following two support pages: <a href="http://www.allwebco-templates.com/support/S_add-links.htm">Adding page links</a> and also see <a href="http://www.allwebco-templates.com/support/S_js_files_add.htm">Adding items to .js files.</a>
+
+<br><br>
+
+
+<span class="title">STEP #3:</span><BR>
+Select and copy the following two lines in the box below. The paste them into the head of your HTML page. You will add this to the head of either a new page you have created, or add this on any page you have added a tour link to. Add this code just above the &lt;/head&gt; tag on your HTML pages.
+
+<br><br>
+
+
+<TEXTAREA NAME="comments" ROWS="4" COLS="55" wrap="soft" style="width:500px;FONT: 10px arial, verdana, sans-serif">
+
+<link rel=StyleSheet href="tour/tour.css" type="text/css" media="screen">
+<script language="JavaScript" type="text/javascript" src="tour/tour_pop-closeup.js"></script>
+</TEXTAREA>
+
+
+<br><br>
+
+See the source code for the <a href="tour-sample_page.htm">tour-sample_page.htm</a> for an example of where to add the code above.
+
+
+
+<br><br>
+
+<span class="title">STEP #4:</span><BR>
+<b>EDIT THE TOUR FLASH HEADER:</b> | <a href="http://www.allwebco-templates.com/support/S_flash_details.htm">Click for more details</a><br>
+Open the "flash-tour.txt" in the "tour" folder with Notepad and change only "Yourwebsitetitle.com Virtual Tour" to match your name or company name. Be sure not to delete the "logo-tour=". If you wish to use a graphic logo, there are instructions later in this document. 
+
+
+<br><br>
+
+<span class="title">STEP #5:</span><BR>
+<b>EDIT THE TOUR AREA:</b> | <a href="http://www.allwebco-templates.com/support/S_tour_templates.htm">Click for more details and options</a><br>
+All the files for the tour area can be found in the "tour" folder.
+
+<br><br>
+
+1. In the "tour" folder edit the tour-1.htm through tour-4.htm with your own item descriptions.
+
+<br><br>
+
+2. For each tour replace the images used in the tour popups. For example, for tour #1, edit the panoramic.jpg and the 9 other .jpg images found in the "tour_folder-1" that is inside the "tour" folder. Each tour image has a thumbnail and a full sized image to edit. For the scrolling image (panoramic.jpg) the matching thumbnail is called tour-1thumb.jpg.
+
+<br><br>
+
+3. If you need to change the header color, change the variables in the header-tour.js in the "tour" folder. (Also see options below)
+
+<br><br>
+
+4. If you would like to use videos or see your other options <a href="http://www.allwebco-templates.com/support/S_tour_templates.htm">Click here for more details</a>.
+
+<br><br>
+
+
+<br><br>
+
+
+<span class="title">TROUBLESHOOTING:</span> | <a href="http://allwebco-templates.com/support/S_tour_templates_addon.htm">More Details</a><br>
+If you do the steps above and the tour is not working on one or any of the pages, be sure you have added the lines of code in step #3 to any and all pages with tour links on them. Add the code in step #3 just above the &lt;/head&gt; tag.
+
+<br><br>
+
+
+It also may not work because you are linking the wrong .htm document or it is misspelled. Remember that hosting areas are case sensitive. Be sure all file and link names match exactly.
+
+<br><br>
+
+It also will not work if your tour folder does not exist or is named incorrectly.
+
+<br><br>
+
+Try doing the above steps again from the start.
+
+<br><br>
+
+
+<br><br><br><br>
+
+<span class="title">OPTIONS:</span><BR>
+
+<br>
+
+
+
+<b>TOUR POPUP OPTIONS:</b> | <a href="http://www.allwebco-templates.com/support/S_pop-ups_variables.htm">More Details</a><br>
+There are some options in the tour_pop-closeup.js. The tour_pop-closeup.js can be found in the "tour" folder and can be edited with Notepad or any plain text editor.
+
+<br><br>
+
+<b>REPLACING IMAGES:</b> | <a href="http://www.allwebco-templates.com/support/S_pictures_change.htm">More Details</a><br>
+If you need help setting up the tour images, please click above.
+
+<br><br>
+
+<b>ADDING VIDEO:</b> | <a href="http://www.allwebco-templates.com/support/S_tour_templates.htm">More Details</a><br>
+You can add video to the tour area and replace either the sliding Flash or any of the images in the tour. Click above for more details.
+
+
+<br><br>
+
+<b>PAYPAL SETUP:</b> | <a href="http://www.allwebco-templates.com/support/S_paypal.htm">More Details</a><br>
+To setup the Paypal forms in the FORMtour-sample_page.htm please click the link above. Be sure to also change the e-mail in the "view cart" button as well as in all the forms on the new HTML page you have created (see step #2-A).
+
+<br><br>
+
+<b>USING A GRAPHIC LOGO:</b><br>
+You can replace the tour Flash logo with a graphic one. To do this, rename or delete the header-tour.js in the "tour" folder and then rename the graphic_header-tour.js to header-tour.js. Then edit the logo-tour.jpg with your own logo image. This image can be found in the "tour_picts" folder.
+
+<br><br>
+
+
+<b>COLOR CHANGES:</b> | <a href="http://www.allwebco-templates.com/support/S_quick_colors.htm">Click for more details</a> | <a href="http://www.allwebco-templates.com/support/S_background_colors.htm">More color details</a><br>
+This add-in features some quick color changes in some of the .js files and the tour.css file. You will edit these files in Notepad to change the colors:
+
+<ul>
+
+<li>Edit the "header-tour.js" to change the Flash header color.
+<li>Edit the "sidebar-background" class in the tour.css to change the sidebar color.
+<li>Edit the tour.css to change the link, text (TABLE) and title in the tour pages.
+<li>Edit the "background.jpg" in the "tour_picts" folder to change the tour background color.
+
+
+</ul>
+
+<br><br>
+
+
+
+</td></tr></table>
+</center>
+<!-- MAIN TABLE-->
+
+
+<script language="JavaScript" src="http://world-templates.com/addons/footer_addons.js"></script>
+
+
+</BODY></HTML>

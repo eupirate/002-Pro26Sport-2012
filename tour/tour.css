@@ -1,0 +1,44 @@
+BODY 			{ scrollbar-base-color: #26558B }
+
+
+a:link		{ color: #3300FF; text-decoration: none }
+
+a:visited	{ color: #3300FF; text-decoration: none }
+
+a:active	{ color: #3300FF; text-decoration: none }
+
+a:hover		{ color: #009900; text-decoration: none }
+
+
+
+a.tourlink:link		{ color: #3300FF; text-decoration: none }
+
+a.tourlink:visited	{ color: #3300FF; text-decoration: none }
+
+a.tourlink:active	{ color: #3300FF; text-decoration: none }
+
+a.tourlink:hover	{ color: #009900; text-decoration: none }
+
+
+
+
+ /* THE NEXT LINE CONTROLS THE FONT SIZE ON ALL TOUR PAGES */
+
+TABLE 			{ COLOR: #000000; FONT: 13px arial, verdana, sans-serif; font-weight: normal }
+
+.tourtitle 		{ color: #000000; font: 15px arial, verdana, sans-serif; letter-spacing: 0px; font-weight: bold }
+
+.tourtext		{ COLOR: #000000; FONT: 12px arial, verdana, sans-serif; font-weight: normal }
+
+.toursmall		{ COLOR: #003366; FONT: 10px verdana, arial, sans-serif; font-weight: normal }
+
+.tourprice 		{ color: #FF6600; font: 12px verdana, arial, sans-serif; letter-spacing: 0px; font-weight: bold;line-height: 19px; }
+
+.image-border		{ BORDER: #647764 1px solid }
+
+.image-borderon		{ BORDER: #0000FF 1px solid }
+
+.borders		{ border: #647764 1px solid }
+
+.sidebar-background	{ background-color: #26558B }
+

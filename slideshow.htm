@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+<title>Products Slideshow</title>
+
+<link rel="stylesheet" href="coolstyle.css" type="text/css">
+
+<script language="JavaScript" type="text/javascript" src="javascripts.js"></script>
+
+<meta http-equiv="imagetoolbar" content="no">
+
+<script language="JavaScript" type="text/javascript">
+
+<!-- BEGIN NO RIGHT CLICK
+
+function noRightClick() {
+if (event.button==2) {
+alert('You may not right mouse click this page.')
+}
+}
+document.onmousedown=noRightClick
+
+//  END NO RIGHT CLICK -->
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+
+<!-- Begin
+var rotate_delay = 3000; // delay in milliseconds (5000 = 5 secs)
+current = 0;
+function next() {
+if (document.slideform.slide[current+1]) {
+document.images.show.src = document.slideform.slide[current+1].value;
+document.slideform.slide.selectedIndex = ++current;
+   }
+else first();
+}
+function gal1() {
+current = 0;
+document.images.show.src = document.slideform.slide[0].value;
+document.slideform.slide.selectedIndex = 0;
+   }
+function gal2() {
+current = 9;
+document.images.show.src = document.slideform.slide[9].value;
+document.slideform.slide.selectedIndex = 9;
+   }
+function gal3() {
+current = 18;
+document.images.show.src = document.slideform.slide[18].value;
+document.slideform.slide.selectedIndex = 18;
+   }
+function gal4() {
+current = 27;
+document.images.show.src = document.slideform.slide[27].value;
+document.slideform.slide.selectedIndex = 27;
+   }
+function gal5() {
+current = 36;
+document.images.show.src = document.slideform.slide[36].value;
+document.slideform.slide.selectedIndex = 36;
+   }
+function gal6() {
+current = 45;
+document.images.show.src = document.slideform.slide[45].value;
+document.slideform.slide.selectedIndex = 45;
+   }
+function gal7() {
+current = 54;
+document.images.show.src = document.slideform.slide[54].value;
+document.slideform.slide.selectedIndex = 54;
+   }
+function gal8() {
+current = 63;
+document.images.show.src = document.slideform.slide[63].value;
+document.slideform.slide.selectedIndex = 63;
+   }
+function gal9() {
+current = 72;
+document.images.show.src = document.slideform.slide[72].value;
+document.slideform.slide.selectedIndex = 72;
+   }
+function previous() {
+if (current-1 >= 0) {
+document.images.show.src = document.slideform.slide[current-1].value;
+document.slideform.slide.selectedIndex = --current;
+   }
+else last();
+}
+function first() {
+current = 0;
+document.images.show.src = document.slideform.slide[0].value;
+document.slideform.slide.selectedIndex = 0;
+}
+function last() {
+current = document.slideform.slide.length-1;
+document.images.show.src = document.slideform.slide[current].value;
+document.slideform.slide.selectedIndex = current;
+}
+function ap(text) {
+document.slideform.slidebutton.value = (text == "Stop") ? "AutoPlay" : "Stop";
+rotate();
+}
+function change() {
+current = document.slideform.slide.selectedIndex;
+document.images.show.src = document.slideform.slide[current].value;
+}
+function rotate() {
+if (document.slideform.slidebutton.value == "Stop") {
+current = (current == document.slideform.slide.length-1) ? 0 : current+1;
+document.images.show.src = document.slideform.slide[current].value;
+document.slideform.slide.selectedIndex = current;
+window.setTimeout("rotate()", rotate_delay);
+   }
+}
+//  End -->
+</script>
+
+
+</head>
+
+
+<body bgcolor="#FFFFFF" text="#000000" onload="javascript:window.focus()">
+
+<!-- CONTENT TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tr><td align="center" valign="middle">
+
+
+
+
+
+
+
+<form name="slideform" class="formmargin">
+
+
+
+
+
+
+
+
+
+<!-- EDIT THIS AREA TO ADD AND REMOVE PICTURES FROM THE SLIDESHOW -->
+
+
+
+<input type="hidden" value="gallery/Fgallery1-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-9.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-9.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-9.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery1-9.jpg" name="slide" onChange="change();">
+
+<input type="hidden" value="gallery/Fgallery2-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery2-9.jpg" name="slide" onChange="change();">
+
+
+<input type="hidden" value="gallery/Fgallery3-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery3-9.jpg" name="slide" onChange="change();">
+
+
+<input type="hidden" value="gallery/Fgallery4-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery4-9.jpg" name="slide" onChange="change();">
+
+
+<input type="hidden" value="gallery/Fgallery5-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery5-9.jpg" name="slide" onChange="change();">
+
+
+<input type="hidden" value="gallery/Fgallery6-1.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-2.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-3.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-4.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-5.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-6.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-7.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-8.jpg" name="slide" onChange="change();">
+<input type="hidden" value="gallery/Fgallery6-9.jpg" name="slide" onChange="change();">
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td align="center" valign="middle">
+
+
+
+
+
+
+
+
+
+<a href="javascript:next();">
+
+<!-- THE NEXT LINE IS THE STARTING SLIDE -->
+
+<img src="gallery/Fgallery1-1.jpg" name="show" class="viewer-border" alt="Next Slide"><br>
+
+
+</a>
+
+
+<br>
+
+
+
+<div id="ZOOM">
+<table cellpadding="0" cellspacing="0" border="0"><tr><td>
+
+<!-- START ZOOM CODE -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var zoom 		= "yes"		// SHOW ZOOM yes/no
+
+   if (zoom == "yes") {
+browser_version= parseInt(navigator.appVersion);
+browser_type = navigator.appName;
+if (browser_type == "Microsoft Internet Explorer" && (browser_version >= 4)) {
+document.write("<nobr><a href=\"#\" onMouseOver=\"show.style.zoom='1.1'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-1.gif\" border=\"0\"></a>");
+document.write("<a href=\"#\" onMouseOver=\"show.style.zoom='1.3'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-2.gif\" border=\"0\"></a>");
+document.write("<a href=\"#\" onMouseOver=\"show.style.zoom='1.5'\" onMouseOut=\"show.style.zoom='1'\"><img src=\"picts/zoom-3.gif\" border=\"0\"></a>");
+document.write("<img src=\"picts/spacer.gif\" height=\"24\" width=\"40\"><br></nobr>");
+} }
+
+// -->
+</script>
+
+<!-- END ZOOM CODE -->
+
+
+</td><td>
+
+
+<!-- START THE SLIDESHOW BUTTONS -->
+
+<input type="button" value="Close" onclick='self.close()' class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" name="slidebutton" onclick="ap(this.value);" value="AutoPlay" title="AutoPlay" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal1();" value="Group 1" title="Group 1" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal2();" value="Group 2" title="Group 2" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal3();" value="Group 3" title="Group 3" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal4();" value="Group 4" title="Group 4" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal5();" value="Group 5" title="Group 5" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="gal6();" value="Group 6" title="Group 6" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="previous();" value="&nbsp;<<&nbsp;" title="Previous" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+</td><td>
+<input type="button" onclick="next();" value="&nbsp;>>&nbsp;" title="Next" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">&nbsp;
+
+</td></tr></table>
+</div>
+
+</td></tr></table>
+</form>
+
+
+
+
+</td></tr></table>
+<!-- CONTENT TABLE -->
+
+
+</body></html>
